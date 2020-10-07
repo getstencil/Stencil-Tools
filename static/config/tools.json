@@ -1,12 +1,12 @@
 [
     {
-        "filepath": "/pages/jpeg-to-png.html",
-        "slug": "convert-jpeg-to-png",
-        "title": "JPEG to PNG Converter",
-        "description": "abcd",
+        "filepath": "/pages/trim.html",
+        "slug": "trim-whitespace-and-transparent-pixels",
+        "title": "Trim Whitespace and Transparent Pixels",
+        "description": "(empty string)",
         "og": {
-            "title": "JPEG to PNG Converter",
-            "description": "abcd"
+            "title": "Trim Whitespace and Transparent Pixels",
+            "description": "(empty string)"
         }
     }
 ]
