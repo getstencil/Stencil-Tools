@@ -85,7 +85,7 @@
         var data = {};
         data.data = {};
         data.data.files = packages;
-        var url = 'https://local.getstencil.com/utils/download',
+        var url = 'https://dev.getstencil.com/utils/download',
             queryString = jQuery.param(data);
         url = (url) + '?' + (queryString);
         return url;
