@@ -1,0 +1,15 @@
+
+        <link href="/static/vendors/uppy/v1.21.2/uppy.min.css" rel="stylesheet">
+        <script src="/static/vendors/uppy/v1.21.2/uppy.min.js"></script>
+        <div class="header">
+            <h1 class="title">JPEG to PNG Converter</h1>
+            <p class="lead">The quickest way to convert a JPEG image to PNG image</p>
+        </div>
+        <div class="body" style="max-width: 420px; margin: 0 auto 0 auto;">
+            <div class="UppyDragDrop"></div>
+            <script>
+                var uppy = Uppy.Core()
+                uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
+                uppy.use(Uppy.Tus, { endpoint: '//master.tus.io/files/' })
+            </script>
+        </div>
