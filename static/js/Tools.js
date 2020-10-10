@@ -92,6 +92,23 @@
     }
 
     /**
+     * __getUppyOptions
+     * 
+     * @access  private
+     * @return  Object
+     */
+    function __getUppyOptions() {
+        var options = {
+            autoProceed: false,
+            restrictions: {
+                maxFileSize: 20 * 1024 * 1024,
+                allowedFileTypes: ['image/*']
+            }
+        };
+        return options;
+    }
+
+    /**
      * __handleUppyCompleteEventListener
      * 
      * @access  private
