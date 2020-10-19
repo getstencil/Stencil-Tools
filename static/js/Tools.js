@@ -31,7 +31,7 @@
      */
     function __addUppyCompleteEventListener() {
         var eventName = 'complete',
-            callback = __handleUppyCompleteEventListener;
+            callback = __handleUppyCompleteEvent;
         __uppy.on(eventName, callback);
     }
 
@@ -43,7 +43,7 @@
      */
     function __addUppyUploadSuccessEventListener() {
         var eventName = 'upload-success',
-            callback = __handleUppySuccessEventListener;
+            callback = __handleUppySuccessEvent;
         __uppy.on(eventName, callback);
     }
 
@@ -109,13 +109,13 @@
     }
 
     /**
-     * __handleUppyCompleteEventListener
+     * __handleUppyCompleteEvent
      * 
      * @access  private
      * @param   Object response
      * @return  void
      */
-    function __handleUppyCompleteEventListener(response) {
+    function __handleUppyCompleteEvent(response) {
 
         // Parsing
         var files = response.successful;
@@ -137,14 +137,14 @@
     }
 
     /**
-     * __handleUppySuccessEventListener
+     * __handleUppySuccessEvent
      * 
      * @access  private
      * @param   File file
      * @param   Object response
      * @return  void
      */
-    function __handleUppySuccessEventListener(file, response) {
+    function __handleUppySuccessEvent(file, response) {
     }
 
     /**
